@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include the Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <title>Login Page</title>
+</head>
+<body id="bg1" class="flex h-screen bg-gray-100">
+    <!-- Left Image (Updated for Responsiveness) -->
+    <div class="hidden md:block w-1/2 bg-cover bg-center bg-[url('login.jpg')] bg-no-repeat bg-cover bg-center"></div>
+
+    <!-- Right Login Container (Updated for Responsiveness) -->
+    <div class="w-full md:w-1/2 p-4 md:p-10">
+        <button>
+            <i id="btn" class="fa-regular fa-moon rounded-full text-3xl"></i>
+        </button>
+    
+        <div class="flex flex-col items-center justify-center h-full">
+            <h2 id="bg" class="text-3xl font-semibold mb-5 text-center justify-center items-center">Login</h2>
+    
+            <!-- Your login form here (Updated for Responsiveness) -->
+            <!-- Your login form here (Updated for Responsiveness) -->
+            <div class="login-form" id="loginForm">
+                <!-- Your login form fields here -->
+                <form class="text-center">
+                    <!-- Your form fields (e.g., username and password) -->
+                    <input id="usernameLogin"
+                        class="mb-2 md:mb-4 px-4 py-3 w-64 rounded-lg border focus:outline-none focus:ring focus:border-yellow"
+                        type="text" placeholder="Username" required>
+                    <input id="passwordLogin"
+                        class="mb-4 px-4 py-3 w-64 rounded-lg border focus:outline-none focus:ring focus:border-black"
+                        type="password" placeholder="Password" required>
+    
+                    <button
+                        class="mb-4 px-4 py-3 w-64 rounded-lg bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-700"
+                        type="button" id="signupButton">Sign Up</button>
+    
+    
+                    <!-- Regular Sign-In Button -->
+                    <button
+                        class="px-4 py-3 w-64 rounded-lg bg-green-500 text-white hover:bg-green-600 focus:outline-none focus:ring focus:border-green-700"
+                        type="submit">Sign in</button>
+                </form>
+            </div>
+            <div class="signup-form hidden" id="signupForm">
+                <!-- Your sign-up form fields here -->
+                <form class="text-center">
+                    <!-- Your form fields (e.g., username and password) -->
+                    <input id="FullnameSignup" class="mb-2 md:mb-4 px-4 py-3 w-64 rounded-lg border focus:outline-none focus:ring focus:border-yellow" type="text" placeholder="Username" required>
+                    <input id="emailSignup" class="mb-4 px-4 py-3 w-64 rounded-lg border focus:outline-none focus:ring focus:border-black" type="email" placeholder="Email" required>
+                    <input id="passwordSignup" class="mb-4 px-4 py-3 w-64 rounded-lg border focus:outline-none focus:ring focus:border-black" type="password" placeholder="Password" required>
+                    <input id="confirmPasswordSignup" class="mb-4 px-4 py-3 w-64 rounded-lg border focus:outline-none focus:ring focus:border-black" type="password" placeholder="Confirm Password" required>
+                    <!-- confirm btn -->
+                    <button
+                        class="mb-4 px-4 py-3 w-64 rounded-lg bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-700"
+                        type="submit" id="confirmButton">Confirm</button>
+                </form>
+            </div>
+    
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+    
+    </html>
