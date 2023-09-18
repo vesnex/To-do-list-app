@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Todo list app, task manager, to-do list, productivity">
+    <meta name="keywords" content="Todo list app, task manager, to-do list, productivity">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <title>DoItNow - ToDo List App</title>
+    <style>
+         .task-list-item .task-text.canceled {
+            text-decoration: line-through;
+            color: #ccc;
+         }
+    </style>
+
+<body class="font-sans bg-black text-yellow-400" id="bg1">
+    <!-- Header -->
+    <header class="bg-black text-yellow-400 p-4 shadow-md shadow-yellow-400">
+        <h1 class="text-2xl font-semibold">DoItNow</h1>
+    </header>
+
+    <div class="flex min-h-screen">
+        <!-- Sidebar Navigation -->
+        <nav class="w-1/4 bg-black text-yellow-400 p-4 shadow-lg shadow-yellow-400">
+            <ul class="space-y-4 hover:underline-yellow-400">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#personal">Personal</a></li>
+                <li><a href="#family">Family</a></li>
+            </ul>
+        </nav>
+ 
+
+<!-- Task Sections -->
+<main class="w-3/4 p-8 ">
+    <!-- Work Tasks -->
+    <div id="work" class="task-section hidden">
+        <h2 class="text-2xl font-semibold mb-4">Work Tasks</h2>
+        <ul class="space-y-2" id="work-tasks">
+            <!-- Work task items will be displayed here -->
+        </ul>
+        <input type="text" id="work-task-input" placeholder="Add a task" class="w-full p-2 mt-4 rounded-lg border focus:ring focus:border-yellow-400 text-black" maxlength="25">
+        <button onclick="addTask('work')" class="bg-yellow-400 text-black p-2 mt-2 rounded-lg shadow-md shadow-white font-semibold">Add Task</button>
+    </div>
+
+    <!-- Personal Tasks -->
+    <div id="personal" class="task-section hidden">
+        <h2 class="text-2xl font-semibold mb-4">Personal Tasks</h2>
+        <ul class="space-y-2" id="personal-tasks">
+            <!-- Personal task items will be displayed here -->
+        </ul>
+        <input type="text" id="personal-task-input" placeholder="Add a task" class="w-full p-2 mt-4 rounded-lg border focus:outline-none focus:ring focus:border-yellow text-black" maxlength="25">
+        <button onclick="addTask('personal')" class="bg-yellow-400 text-black font-semibold p-2 mt-2 rounded-lg shadow-md shadow-white">Add Task</button>
+    </div>
+
+    <!-- Family Tasks -->
+    <div id="family" class="task-section hidden">
+        <h2 class="text-2xl font-semibold mb-4">Family Tasks</h2>
+        <ul class="space-y-2" id="family-tasks">
+            <!-- Family task items will be displayed here -->
+        </ul>
+        <input type="text" id="family-task-input" placeholder="Add a task" class="w-full p-2 mt-4 rounded-lg border focus:outline-none focus:ring focus:border-yellow text-black" maxlength="25">
+        <button onclick="addTask('family')" class="bg-yellow-400 text-black border-black p-2 mt-2 rounded-lg shadow-md shadow-white font-semibold">Add Task</button>
+    </div>
+</main>
+
+<!-- Footer -->
+<script src="app.js"></script>
+
+</body>
+</html>
