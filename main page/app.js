@@ -54,7 +54,7 @@ function renderTasks(category) {
 
     // Create a flex container for the task list
     const flexContainer = document.createElement('div');
-    flexContainer.className = 'flex flex-wrap'; // Use flex-wrap to wrap items
+    // Use flex-wrap to wrap items
 
     tasks[category].forEach((task, index) => {
         const li = document.createElement('li');
