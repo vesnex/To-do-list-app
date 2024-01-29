@@ -4,23 +4,29 @@ var btn = document.querySelector("#btn");
 var body = document.querySelector(".bg1");
 var text = document.querySelector(".bg");
 
+
+body.style.backgroundColor = "rgb(0, 0, 0)";
+text.style.color = "cyan";
+btn.style.color = "cyan";
+btn.style.backgroundColor = "rgb(0, 0, 0)";
+
 let flag = 0;
 
 btn.addEventListener("click", function() {
     console.log("Button clicked, flag is currently: " + flag);
     if (flag == 0) {
-        body.style.backgroundColor = "rgb(0, 0, 0)";
-        text.style.color = "yellow";
-        btn.style.color = "yellow";
-        btn.style.backgroundColor = "rgb(0, 0, 0)";
-        flag = 1;
-        console.log("Flag updated to: " + flag);
-    } else if (flag ==  1){
         body.style.backgroundColor = "#f3f4f6";
         text.style.color = "black";
         btn.style.backgroundColor = "#f3f4f6";
         btn.style.color = "black";
         btn.style.fontSize = "30px";
+        flag = 1;
+        console.log("Flag updated to: " + flag);
+    } else if (flag ==  1){
+        body.style.backgroundColor = "rgb(0, 0, 0)";
+        text.style.color = "cyan";
+        btn.style.color = "cyan";
+        btn.style.backgroundColor = "rgb(0, 0, 0)";
         flag = 0;
         console.log("Flag updated to: " + flag);
     }
@@ -61,7 +67,7 @@ function renderTasks(category) {
 
     tasks[category].forEach((task, index) => {
         const li = document.createElement('li');
-        li.className = 'text-yellow-400 max-w-xs'; // Limit the width of task items
+        li.className = 'text-cyan-400 max-w-xs'; // Limit the width of task items
         
         // Create a checkbox input
         const checkbox = document.createElement('input');
@@ -79,7 +85,7 @@ function renderTasks(category) {
         // Create a label for the task text and timestamp
         const label = document.createElement('label');
         label.htmlFor = `${category}-task-${index}`;
-        label.innerHTML = `<span>${task.text}</span> - <span class="text-green-700">${task.time}</span>`;
+        label.innerHTML = `<span>${task.text}</span> - <span class="text-cyan-400">${task.time}</span>`;
 
         li.appendChild(checkbox);
         li.appendChild(label);
