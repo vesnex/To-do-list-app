@@ -4,21 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoItNow - Team Vesnex</title>
+    <title>Landing Page</title>
     <!-- Include the Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <style>
         /* Additional custom styles can be added here */
         .bg2 {
-            background-color: #000514;
+            background-color: black;
         }
+
+
     </style>
 </head>
 
-<body class="text-yellow-400 font-sans effect2 bg2">
+<body class="text-cyan-500 font-sans bg2 effect2">
     <!-- Navigation -->
-    <nav class="bg-black text-yellow-400 p-4">
+    <nav class="bg-black text-cyan-400 p-4">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-semibold">DoItNow</h1>
             <a href="https://github.com/Vesnex" target="_blank" class="text-xl">
@@ -27,49 +29,49 @@
         </div>
     </nav>
 
+
     <!-- Hero Section -->
     <header class=" py-32 text-center effect2 bg2">
         <div class="container mx-auto">
             <h1 class="text-4xl font-bold mb-6">Welcome to DoItNow</h1>
             <p class="text-lg mb-12">Build by Vesnex team</p>
-            
             <button
-                class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-3 rounded-full inline-block transition duration-300">
-                <a href="./main page/main.html" target="_blank">Get Started</a>
+                class="bg-cyan-300 hover:bg-cyan-500 text-black font-semibold px-6 py-3 rounded-full inline-block transition duration-300">
+                <a href="index.html" target="_blank">Get Started</a>
             </button>
         </div>
     </header>
 
     <section class="app-views-section py-16">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold text-yellow-400 mb-8">App Views</h2>
+            <h2 class="text-3xl font-semibold text-cyan-400 mb-8">App Views</h2>
 
             <div class="flex flex-wrap justify-center items-center gap-16">
                 <!-- Laptop View -->
                 <div class="app-view laptop-view">
                     <img src="l-view.jpg" alt="Laptop View" class="w-full h-auto shadow-lg shadow-white rounded-lg">
-                    <h3 class="text-2xl text-yellow-400 mt-4">Laptop View</h3>
+                    <h3 class="text-2xl text-cyan-400 mt-4">Laptop View</h3>
                 </div>
 
                 <!-- Tablet View -->
                 <div class="app-view tablet-view">
                     <img src="t-view.jpg" alt="Tablet View" class="w-full h-auto shadow-lg shadow-white rounded-lg">
-                    <h3 class="text-2xl text-yellow-400 mt-4">Tablet View</h3>
+                    <h3 class="text-2xl text-cyan-400 mt-4">Tablet View</h3>
                 </div>
 
                 <!-- Mobile View -->
                 <div class="app-view mobile-view">
                     <img src="m-view.jpg" alt="Mobile View" class="w-full h-auto shadow-lg shadow-white rounded-lg">
-                    <h3 class="text-2xl text-yellow-400 mt-4">Mobile View</h3>
+                    <h3 class="text-2xl text-cyan-400 mt-4">Mobile View</h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="text-yellow-400 body-font relative">
+    <section class="text-cyan-400 body-font relative">
         <div class="container px-5 py-24 mx-auto shadow-lg shadow-white rounded-full bg-black">
             <div class="text-center mb-12">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-yellow-400">Contact Us</h1>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-cyan-400">Contact Us</h1>
             </div>
             <form class="lg:w-1/2 md:w-2/3 mx-auto">
                 <div class="flex flex-wrap -m-2">
@@ -77,33 +79,33 @@
                         <div class="relative">
                             <label for="name" class="leading-7 text-sm ">Name :</label>
                             <input type="text" id="name" name="name"
-                                class="w-full bg-white  rounded border border-gray-300 text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out focus:outline-none focus-yellow-400">
+                                class="w-full bg-white  rounded border border-gray-300 text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out focus:outline-none focus-cyan-400">
                         </div>
                     </div>
                     <div class="p-2 w-1/2">
                         <div class="relative">
                             <label for="email" class="leading-7 text-sm ">Email :</label>
                             <input type="email" id="email" name="email"
-                                class="w-full bg-white rounded border border-gray-300 text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out focus:outline-none focus-yellow-400">
+                                class="w-full bg-white rounded border border-gray-300 text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out focus:outline-none focus-cyan-400">
                         </div>
                     </div>
                     <div class="p-2 w-full">
                         <div class="relative">
                             <label for="message" class="leading-7 text-sm ">Message :</label>
                             <textarea id="message" name="message"
-                                class="w-full bg-white  rounded border border-gray-300 text-base outline-none text-black py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out focus:outline-none focus-yellow-400"></textarea>
+                                class="w-full bg-white  rounded border border-gray-300 text-base outline-none text-black py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out focus:outline-none focus-cyan-400"></textarea>
                         </div>
                     </div>
                     <div class="p-2 w-full">
                         <button
-                            class="flex mx-auto text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-lg bg-yellow-400">Send</button>
+                            class="flex mx-auto text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-lg bg-cyan-400">Send</button>
                     </div>
                 </div>
             </form>
         </div>
 
         <!-- Footer -->
-        <footer class="bg-black text-yellow-400 p-4 mt-40 sticky bottom-0">
+        <footer class="bg-black text-cyan-400 p-4 mt-40 sticky bottom-0">
             <div class="container mx-auto flex justify-between items-center">
                 <p>&copy; 2023 Vesnex. All Rights Reserved.</p>
                 <a href="https://github.com/Vesnex" target="_blank" class="text-xl">
