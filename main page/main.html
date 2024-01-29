@@ -15,12 +15,19 @@
             text-decoration: line-through;
             color: rgb(50, 50, 50);
         }
+        .darklight{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     </style>
 
 <body class="font-sans bg bg1" >
     <!-- Header -->
-    <header class="p-4 shadow-md shadow-yellow-400">
+    <header class="p-4 shadow-md shadow-yellow-400 darklight">
         <h1 class="text-2xl font-semibold">DoItNow</h1>
+        <button>
+            <i id="btn" class="fa-regular fa-moon rounded-full text-3xl"></i>
+        </button>
     </header>
 
     <div class="flex min-h-screen">
@@ -31,9 +38,6 @@
                 <li><a href="#personal">Personal</a></li>
                 <li><a href="#family">Family</a></li>
             </ul>
-            <button>
-                <i id="btn" class="fa-regular fa-moon rounded-full text-3xl"></i>
-            </button>
         </nav>
 
 
